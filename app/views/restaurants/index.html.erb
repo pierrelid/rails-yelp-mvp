@@ -1,0 +1,16 @@
+
+<div class="container" style="padding-top:2em;">
+  <div class="row">
+    <% @restaurants.each do |restaurant| %>
+    <div class="col-sm-4">
+       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://picsum.photos/500/400/?random');">
+        <div class="card-description">
+          <h2><%= link_to restaurant.name, restaurant_path(restaurant.id) %></h2>
+          <p><%= restaurant.address %></p>
+        </div>
+      </div>
+    </div>
+   <% end %>
+ </div>
+</div>
+

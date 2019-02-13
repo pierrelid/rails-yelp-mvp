@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Restaurant.destroy_all
+3.times {
+  Restaurant.create!(
+    name: 'toto',
+    address: 'adresse de toto',
+    phone: '0600000000',
+    category: 'itilian'
+   )
+}
